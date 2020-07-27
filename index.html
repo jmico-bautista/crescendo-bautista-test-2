@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resource/styles/web.css">
+    <link rel="stylesheet" href="./resource/styles/mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>ACME Corporation</title>
+</head>
+<body class="body">
+    <div id="navigation">
+        <div class="navigation_container">
+            <div class="navigation_container_icon">
+                <img src="./resource/img/top_nav_ico.png" alt="acme_ico">
+            </div>
+
+            <div class="navigation_container_slogan">
+                <div class="navigation_container_slogan_text navigation_container_slogan_text--main">Research Professional</div>
+                <div class="navigation_container_slogan_text navigation_container_slogan_text--sub">Platform</div>
+            </div>
+
+            <div class="navigation_container_menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Insights</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="m_navigation">
+        <div class="m_navigation_contain_dropmenu m_navigation_contain_dropmenu--hidden">
+            <div class="m_navigation_contain">
+                <div class="m_navigation_contain_logo">
+                    <img src="./resource/img/top_nav_ico_hr.png" alt="top_nav_ico_hr">
+                </div>
+                <div class="m_navigation_contain_btn" onclick="open_menu()">
+                    <div class="hidden_menu">
+                        <div class="line_menu"></div>
+                        <div class="line_menu"></div>
+                        <div class="line_menu"></div>
+                    </div>
+                    <!-- <div class="shown_menu">
+                        <div class="line_menu"></div>
+                        <div class="line_menu"></div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="m_navigation_contain_dropmenu_contain">
+                <div class="m_new_menu_contain_label">
+                    Site Links
+                </div>
+                <div class="m_new_menu_contain_menu">
+                    <div class="m_new_menu_contain_menu">
+                        <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Home</button>
+                        <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">About Us</button>
+                        <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Insights</button>
+                        <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Events</button>
+                        <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Due Diligence</button>
+                        <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m_navigation_contain_dimmer m_navigation_contain_dimmer--hidden"></div>
+    </div>
+
+    <div id="aboutus">
+        <div class="aboutus_container body--resize">
+            <div class="aboutus_container_text aboutus--bold">ACME Wealth</div>
+            <div class="aboutus_container_text aboutus--bold">Management Platforms</div>
+            <div class="aboutus_container_text">Investment excellence.</div>
+            <div class="aboutus_container_text">Diversity of thought.</div>
+            <div class="aboutus_container_text">Organizational strength.</div>
+        </div>
+    </div>
+
+    <div id="m_aboutus">
+        <div class="m_aboutus_contain">
+            <div class="m_aboutus_contain_slogan">
+                <span class="m_aboutus_contain_slogan_text">Research Professional Platform</span>
+            </div>
+            <div class="m_aboutus_contain_intro">
+                <div class="m_aboutus_contain_intro_text">
+                    <span>ACME Wealth</span>
+                </div>
+                <div class="m_aboutus_contain_intro_text m_aboutus_contain_intro_text--big">
+                    <span>Management Platforms</span>
+                </div>
+                <div class="m_aboutus_contain_intro_text m_aboutus_contain_intro_text--image">
+                    <img src="./resource/img/dotted_liner.png" alt="dotted_liner">
+                </div>
+                <div class="m_aboutus_contain_intro_text">
+                    <span>Investment excellence.</span>
+                </div>
+                <div class="m_aboutus_contain_intro_text">
+                    <span>Diversity of thought.</span>
+                </div>
+                <div class="m_aboutus_contain_intro_text">
+                    <span>Organizational strength.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="insights">
+        <div class="insights_contain body--resize">
+            <div class="insights_contain_intro">
+                <div class="insights_contain_intro_title insights_contain_intro_title--big">
+                    <span>ACME Insights</span>
+                </div>
+                <div class="insights_contain_intro_sub insights_contain_intro_sub--small">
+                    <span>How are factors being used around the world?</span>
+                </div>
+            </div>
+
+            <div class="insights_contain_tiles">
+                <div class="insights_tiles_comp insights_tiles_comp--blue">
+                    <div class="insights_tiles_comp_image">
+                        <img src="./resource/img/insights/insight_img1.png" alt="insight_img1">
+                    </div>
+                    <div class="insights_tiles_comp_subject">
+                        <span class="insights_tiles_comp_subject_text insights_tiles_comp_subject_text--blue">Global Factor <br/> Investing Study</span>
+                    </div>
+                </div>
+
+                <div class="insights_tiles_comp insights_tiles_comp--green">
+                    <div class="insights_tiles_comp_image">
+                        <img src="./resource/img/insights/insight_img2.png" alt="insight_img2">
+                    </div>
+                    <div class="insights_tiles_comp_subject">
+                        <span class="insights_tiles_comp_subject_text insights_tiles_comp_subject_text--green">2019 <br/> Outlook</span>
+                    </div>
+                </div>
+                
+                <div class="insights_tiles_comp insights_tiles_comp--lightblue">
+                    <div class="insights_tiles_comp_image">
+                        <img src="./resource/img/insights/insight_img3.png" alt="insight_img3">
+                    </div>
+                    <div class="insights_tiles_comp_subject">
+                        <span class="insights_tiles_comp_subject_text insights_tiles_comp_subject_text--lightblue">Capital Market <br/> Assumptions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="m_insights">
+        <div class="m_insights_contain body--resize">
+            <div class="m_insights_contain_intro">
+                <div class="m_insights_intro_title m_insights_intro_title--big">
+                    <span>ACME <span class="m_insights_intro_title--bold">Insights</span></span>
+                </div>
+                <div class="m_insights_contain_intro_sub m_insights_contain_intro_sub--small">
+                    <span>How are factors being used around the world?</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="m_insights_contain_tiles">
+            <div class="carousel" data-flickity='{ "freeScroll": true, "prevNextButtons": false}'>
+                <div class="carousel-cell">
+                    <div class="insights_tiles_comp">
+                        <div class="insights_tiles_comp_image">
+                            <img src="./resource/img/insights/insight_img1.png" alt="insight_img1">
+                        </div>
+                        <div class="insights_tiles_comp_subject m_insights_tiles_comp_subject">
+                            <span class="insights_tiles_comp_subject_text">Global Factor <br/> Investing Study</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="insights_tiles_comp">
+                        <div class="insights_tiles_comp_image">
+                            <img src="./resource/img/insights/insight_img2.png" alt="insight_img2">
+                        </div>
+                        <div class="insights_tiles_comp_subject m_insights_tiles_comp_subject">
+                            <span class="insights_tiles_comp_subject_text">2019 <br/> Outlook</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="insights_tiles_comp">
+                        <div class="insights_tiles_comp_image">
+                            <img src="./resource/img/insights/insight_img3.png" alt="insight_img3">
+                        </div>
+                        <div class="insights_tiles_comp_subject m_insights_tiles_comp_subject">
+                            <span class="insights_tiles_comp_subject_text">Capital Market <br/> Assumptions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="insightsft" class="m_insightsft">
+        <div class="insightsft_contain m_insightsft_contain body--resize">
+            <div class="insightsft_contain_msg m_insightsft_contain_msg">
+                <div class="insightsft_contain_msg_text insightsft_contain_msg_text--big m_insightsft_contain_msg_text--big">
+                    <span>Our Commitment to Professionals</span>
+                </div>
+                <div class="insightsft_contain_msg_text insightsft_contain_msg_text--small">
+                    <span>We help our partners deliver industry leading results with a commitment to excellence, throught-provoking insights and experienced distribution. We are laser focused on our shared goal - helping clients achieve their objectives.</span>
+                </div>
+            </div>
+            <div class="insightsft_contain_btn">
+                <button type="button" class="insightsft_contain_btn_contactus">Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="events">
+        <div class="events_contain body--resize">
+            <div class="events_contain_intro">
+                <div class="events_contain_intro_title events_contain_intro_title--big">
+                    <span>Upcoming Events</span>
+                </div>
+                <div class="events_contain_intro_title events_contain_intro_title--small">
+                    <span>This needs a great tagline, but I’ll fill it in later</span>
+                </div>
+            </div>
+
+            <div class="events_contain_cal">
+                <div class="events_contain_cal_crd">
+                    <div class="events_contain_cal_crd_evnt">
+                        <div class="events_contain_cal_crd_evnt_date">
+                            <span class="events_contain_cal_crd_evnt_date_mon">JAN</span>
+                            <br/>
+                            <span class="events_contain_cal_crd_evnt_date_day">28</span>
+                        </div>
+                        <div class="events_contain_cal_crd_evnt_title">
+                            <div class="evnt_title_txt evnt_title_txt--big">Insight Exchange Network</div>
+                            <div class="evnt_title_txt evnt_title_txt--small">Join us for this conference showcasing innovation.</div>
+                        </div>
+                        <div class="events_contain_cal_crd_evnt_btn">
+                            <button class="events_contain_cal_crd_evnt_btn_gmi">Get More Insight</button>
+                        </div>
+                    </div>
+                    <div class="events_contain_cal_crd_loc">
+                        <span class="events_contain_cal_crd_loc_area1">Chicago,</span>
+                        <span class="events_contain_cal_crd_loc_area2">IL</span>
+                    </div>
+                </div>
+    
+                <div class="events_contain_cal_crd">
+                    <div class="events_contain_cal_crd_evnt">
+                        <div class="events_contain_cal_crd_evnt_date">
+                            <span class="events_contain_cal_crd_evnt_date_mon">FEB</span>
+                            <br/>
+                            <span class="events_contain_cal_crd_evnt_date_day">12</span>
+                        </div>
+                        <div class="events_contain_cal_crd_evnt_title">
+                            <div class="evnt_title_txt evnt_title_txt--big">Citywide Buyer’s Retreat</div>
+                            <div class="evnt_title_txt evnt_title_txt--small">Find out how banks are responding to the changing future of interest.</div>
+                        </div>
+                        <div class="events_contain_cal_crd_evnt_btn">
+                            <button class="events_contain_cal_crd_evnt_btn_gmi">Get More Insight</button>
+                        </div>
+                    </div>
+                    <div class="events_contain_cal_crd_loc">
+                        <span class="events_contain_cal_crd_loc_area1">The Wagner,</span>
+                        <span class="events_contain_cal_crd_loc_area2">New York</span>
+                    </div>
+                </div>
+    
+                <div class="events_contain_cal_crd">
+                    <div class="events_contain_cal_crd_evnt">
+                        <div class="events_contain_cal_crd_evnt_date">
+                            <span class="events_contain_cal_crd_evnt_date_mon">MAY</span>
+                            <br/>
+                            <span class="events_contain_cal_crd_evnt_date_day">6</span>
+                        </div>
+                        <div class="events_contain_cal_crd_evnt_title">
+                            <div class="evnt_title_txt evnt_title_txt--big">Research Exchange</div>
+                            <div class="evnt_title_txt evnt_title_txt--small">Find the best online resources to help with your investments...</div>
+                        </div>
+                        <div class="events_contain_cal_crd_evnt_btn">
+                            <button class="events_contain_cal_crd_evnt_btn_gmi">Get More Insight</button>
+                        </div>
+                    </div>
+                    <div class="events_contain_cal_crd_loc">
+                        <span class="events_contain_cal_crd_loc_area1">London,</span>
+                        <span class="events_contain_cal_crd_loc_area2">England</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="m_events">
+        <div class="m_events_contain body--resize">
+            <div class="m_events_contain_intro">
+                <div class="m_events_contain_intro_title m_events_contain_intro_title--big">
+                    <span>Upcomming <span class="m_events_contain_intro_title--bold">Events</span></span>
+                </div>
+                <div class="m_events_contain_intro_sub m_events_contain_intro_sub--small">
+                    <span>At ACME, we're dedicated to learn,ing connecting, and exploring oportunities</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="m_events_contain_cal">
+            <div class="carousel" data-flickity='{ "freeScroll": true, "prevNextButtons": false}'>
+                <div class="carousel-cell">
+                    <div class="events_contain_cal_crd">
+                        <div class="events_contain_cal_crd_evnt">
+                            <div class="events_contain_cal_crd_evnt_date">
+                                <span class="events_contain_cal_crd_evnt_date_mon">JAN</span>
+                                <br/>
+                                <span class="events_contain_cal_crd_evnt_date_day">28</span>
+                            </div>
+                            <div class="events_contain_cal_crd_evnt_title">
+                                <div class="evnt_title_txt evnt_title_txt--big">Insight Exchange Network</div>
+                                <div class="evnt_title_txt evnt_title_txt--small">Join us for this conference showcasing innovation.</div>
+                            </div>
+                            <div class="events_contain_cal_crd_evnt_btn">
+                                <button class="events_contain_cal_crd_evnt_btn_gmi">Get More Insight</button>
+                            </div>
+                        </div>
+                        <div class="events_contain_cal_crd_loc">
+                            <span class="events_contain_cal_crd_loc_area1">Chicago,</span>
+                            <span class="events_contain_cal_crd_loc_area2">IL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-cell">
+                    <div class="events_contain_cal_crd">
+                        <div class="events_contain_cal_crd_evnt">
+                            <div class="events_contain_cal_crd_evnt_date">
+                                <span class="events_contain_cal_crd_evnt_date_mon">FEB</span>
+                                <br/>
+                                <span class="events_contain_cal_crd_evnt_date_day">12</span>
+                            </div>
+                            <div class="events_contain_cal_crd_evnt_title">
+                                <div class="evnt_title_txt evnt_title_txt--big">Citywide Buyer’s Retreat</div>
+                                <div class="evnt_title_txt evnt_title_txt--small">Find out how banks are responding to the changing future of interest.</div>
+                            </div>
+                            <div class="events_contain_cal_crd_evnt_btn">
+                                <button class="events_contain_cal_crd_evnt_btn_gmi">Get More Insight</button>
+                            </div>
+                        </div>
+                        <div class="events_contain_cal_crd_loc">
+                            <span class="events_contain_cal_crd_loc_area1">The Wagner,</span>
+                            <span class="events_contain_cal_crd_loc_area2">New York</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-cell">
+                    <div class="events_contain_cal_crd">
+                        <div class="events_contain_cal_crd_evnt">
+                            <div class="events_contain_cal_crd_evnt_date">
+                                <span class="events_contain_cal_crd_evnt_date_mon">MAY</span>
+                                <br/>
+                                <span class="events_contain_cal_crd_evnt_date_day">6</span>
+                            </div>
+                            <div class="events_contain_cal_crd_evnt_title">
+                                <div class="evnt_title_txt evnt_title_txt--big">Research Exchange</div>
+                                <div class="evnt_title_txt evnt_title_txt--small">Find the best online resources to help with your investments...</div>
+                            </div>
+                            <div class="events_contain_cal_crd_evnt_btn">
+                                <button class="events_contain_cal_crd_evnt_btn_gmi">Get More Insight</button>
+                            </div>
+                        </div>
+                        <div class="events_contain_cal_crd_loc">
+                            <span class="events_contain_cal_crd_loc_area1">London,</span>
+                            <span class="events_contain_cal_crd_loc_area2">England</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_contain body--resize">
+            <div class="footer_contain_content">
+                <span>
+                    Call us at 111-222-3333 <br/> for more information 
+                </span>
+            </div>
+            <div class="footer_contain_content footer_contain_content--right">
+                <div class="footer_contain_content_partition footer_contain_content--align">Social Share</div>
+                <div class="footer_contain_content_partition">
+                    <img src="./resource/img/contact_us/twitter.png" alt="">
+                    <img src="./resource/img/contact_us/fb.png" alt="">
+                    <img src="./resource/img/contact_us/linkedin.png" alt="">
+                    <img src="./resource/img/contact_us/email.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="m_footer_logo">
+        <div class="m_footer_logo_contain body--resize">
+            <div class="m_footer_logo_contain_image">
+                <img src="./resource/img/top_nav_ico_solo.png" alt="top_nav_ico_solo" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <div id="m_new_menu">
+        <div class="m_new_menu_contain body--resize">
+            <div class="m_new_menu_contain_menu">
+                <div class="m_new_menu_contain_menu">
+                    <button type="button" class="m_new_menu_contain_menu_btn">Privacy Policy</button>
+                    <button type="button" class="m_new_menu_contain_menu_btn">Terms of Use</button>
+                </div>
+            </div>
+            <div class="m_new_menu_contain_label">
+                Site Links
+            </div>
+            <div class="m_new_menu_contain_menu">
+                <div class="m_new_menu_contain_menu">
+                    <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Home</button>
+                    <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">About Us</button>
+                    <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Insights</button>
+                    <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Events</button>
+                    <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Due Diligence</button>
+                    <button type="button" class="m_new_menu_contain_menu_btn m_new_menu_contain_menu_btn--full">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    function open_menu() {
+        var dimmer = document.getElementsByClassName("m_navigation_contain_dimmer");
+        dimmer[0].classList.toggle("m_navigation_contain_dimmer--hidden");
+        var dimmer = document.getElementsByClassName("m_navigation_contain_dropmenu");
+        dimmer[0].classList.toggle("m_navigation_contain_dropmenu--hidden");
+    }
+</script>
